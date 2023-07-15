@@ -61,21 +61,20 @@ else{ console.log(`el numero ${numero8} no edivisible por 2`)}
 //9 Escribe un programa que pida una frase y escriba las vocales que aparecen
 //Nota: Tener en cuenta la función length y substring o charAt 
 
-/*let fraseVocales = prompt("ingrese una frase")
+let frase = prompt("ingrese una frase")
+frase= frase.toLocaleLowerCase()
 
- var frase = prompt("Ingrese una frase:");
-var vocales = "";
-var i = 0;
+let vocales = ["a","e","i","o","u","á","é","í","ó","ú"];
 
-while (i < frase.length) {
-  var caracter = frase.charAt(i).toLowerCase();
-  if ("aeiou".includes(caracter)) {
-    vocales += caracter + " ";
+for (let i = 0; i < frase.length; i++) {
+  let letra = frase.charAt(i);
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+    vocales += letra + " ";
   }
-  i++;
 }
 
-document.write("Las vocales que aparecen en la frase son: " + vocales); */
+
+console.log("Las vocales encontradas son: " + vocales);
 
 
 //10 Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
